@@ -42,15 +42,45 @@ body {
 
 h1 {
     text-align: center;
-}
- 
-h2 {
-    font-weight: 300;
-    font-size: medium;
+    color: hsl(237, 12%, 33%);
 }
 
 .arrow-down {
     float: right;    
 }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* w3schools acordion css */
+    /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    color: hsl(240, 6%, 50%);
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    margin: 0;
+    font-weight: 300;
+    font-size: medium;
+    /* transition: 0.4s; */
+  }
+
+  .accordion:last-of-type {
+      margin-bottom: 20px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    color: hsl(240, 6%, 50%);
+  }
