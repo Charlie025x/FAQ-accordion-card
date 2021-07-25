@@ -3,6 +3,7 @@
 body {
     margin: 0;
     background-image: linear-gradient( hsl(273, 62%, 37%), hsl(240, 73%, 65%));
+    font-family: 'Kumbh Sans', sans-serif;
 }
 .card {
     display: flex;
@@ -15,6 +16,7 @@ body {
     justify-content: center;
     align-content: center;
     justify-content: space-between;
+    filter: drop-shadow(0px 20px 20px #27008185);
 }
 
 .image-container {
@@ -101,6 +103,11 @@ h1 {
 
   /* Desktop styles */
   @media only screen and (min-width: 992px) {
+
+    body, html {
+        height: 100vh;
+    }
+    
     .card {
         display: flex;
         flex-direction: row; /*edit*/
@@ -112,6 +119,7 @@ h1 {
         justify-content: center;
         align-content: center;
         justify-content: space-between;
+        /* overflow: hidden; */ /* this would also hide the orange box*/
     }
 
     .image-container {
@@ -135,36 +143,39 @@ h1 {
         display: none;
     }
 
-    .faq-container {
-        flex: 1; /*splits card in half */
-        margin-top: 100px;
-    }
-
     .d-image, .d-image-shadow, .image-container .d-box {
         display: block;
         position: relative;
     }
     
     .d-image {
-        /* display: block;
-        position: relative; */
         right: 120px;
         top: 40px;
     }
     
     .d-image-shadow {
-        /* display: block;
-        position: relative; */
         bottom: 370px;
         right: 120px;
     }
 
     .image-container .d-box {
-        /* display: block;
-        position: relative; */
         bottom: 700px;
         right: 150px;
         width: 200px;
+    }
+
+    .faq-container {
+        flex: 1; /*splits card in half */
+        margin-top: 0px; /*edit*/
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    .accordion {
+        padding-left: 0px;
+        margin-right: 9.5%;
     }
 
 }
