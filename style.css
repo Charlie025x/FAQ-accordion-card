@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
 }
 
-.image {
+.image-container {
     margin: auto;
     position: relative;
     right: 15px;
@@ -25,18 +25,25 @@ body {
     height: 0px; 
  }
 
-.image img {
+.m-image {
     display: block;
     width: 100%;
     max-width: 500px; /*actual image width*/
+    max-width: 261px;
     height: auto; /* maintain aspect ratio*/
  }
 
-.image2 {
-    bottom: 0px;
+.m-image-shadow {
+    position:relative;
+    bottom: 100px;
+    left: 28px;
 }
 
-.faq-box {
+.d-image, .d-image-shadow {
+    display: none;
+}
+
+.faq-container {
     margin-top: 100px;
 }
 
@@ -76,6 +83,11 @@ h1 {
     color: hsl(237, 12%, 33%);
     font-weight: 700;
   }
+
+    .accordion:hover {
+    color: hsl(14, 88%, 65%);
+    font-weight: 700;
+  }
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
@@ -84,3 +96,54 @@ h1 {
     overflow: hidden;
     color: hsl(240, 6%, 50%);
   }
+
+  /* Desktop styles */
+  @media only screen and (min-width: 992px) {
+    .card {
+        display: flex;
+        flex-direction: row; /*edit*/
+        background-color: white;
+        border-radius: 25px;
+        max-width: 70%; /*edit*/
+        margin: 100px auto; /*edit*/
+        padding: 30px;
+        justify-content: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    .image-container {
+        flex: 1; /* splits card in half */
+        width: 50%;
+        margin: 0;
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+        height: 0px; 
+     }
+    
+    .image-container img {
+        /* display: block; */
+        width: 100%;
+        max-width: 500px; /*actual image width*/
+        height: auto; /* maintain aspect ratio*/
+     }
+    
+    .m-image, .m-image-shadow{
+        display: none;
+    }
+
+    .faq-container {
+        flex: 1; /*splits card in half */
+        margin-top: 100px;
+    }
+
+    .d-image {
+        display: block;
+    }
+    
+    .d-image-shadow {
+        display: block;
+    }
+
+}
