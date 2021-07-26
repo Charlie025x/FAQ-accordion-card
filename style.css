@@ -120,27 +120,20 @@ h1 {
     
     .card {
         display: flex;
-        flex-direction: row; /*edit*/
+        flex-direction: row;
         background-color: white;
-        border-radius: 25px;
-        width: 70%; /*edit*/
+        width: 70%;
         height: 60vh;
-        margin: 100px auto; /*edit*/
+        margin: 100px auto;
         padding: 0px;
         justify-content: center;
         align-content: center;
         justify-content: space-between;
-        /* overflow: hidden; */ /* this would also hide the orange box*/
     }
 
     .image-container {
         flex: 1; /* splits card in half */
         margin: 0;
-        position: relative;
-        right: 0px;
-        bottom: 0px;
-        height: 0px; 
-        
         background:
         url('./images/illustration-woman-online-desktop.svg'),
         url('images/bg-pattern-desktop.svg');
@@ -187,8 +180,12 @@ h1 {
 
     .faq-container {
         flex: 1; /*splits card in half */
-        margin-top: 30px; /*edit*/
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px; /*edit*/
         overflow-y: scroll;
+        justify-content: center;
+        align-content: center;
     }
 
     .faq-container::-webkit-scrollbar {
