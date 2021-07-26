@@ -21,10 +21,7 @@ body {
 
 .image-container {
     margin: auto;
-    position: relative;
-    right: 15px;
-    bottom: 105px;
-    height: 0px; 
+    height: 0px;
  }
 
 .m-image {
@@ -33,14 +30,17 @@ body {
     max-width: 500px; /*actual image width*/
     max-width: 261px;
     height: auto; /* maintain aspect ratio*/
+    position: relative;
+    right: 15px;
+    bottom: 135px;
 
     
  }
 
 .m-image-shadow {
     position:relative;
-    bottom: 100px;
-    left: 28px;
+    bottom: 225px;
+    left: 13px;
 }
 
 .d-image, .d-image-shadow, .d-box{
@@ -107,15 +107,26 @@ h1 {
     body, html {
         height: 100vh;
     }
+/* begin new code 77777777777777777777777777777777777777777777777*/
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+/* end new code 7777777777777777777777777777777777777777777777777777777*/
     
     .card {
         display: flex;
         flex-direction: row; /*edit*/
         background-color: white;
         border-radius: 25px;
-        max-width: 70%; /*edit*/
+        width: 70%; /*edit*/
+        height: 60vh;
         margin: 100px auto; /*edit*/
-        padding: 30px;
+        padding: 0px;
         justify-content: center;
         align-content: center;
         justify-content: space-between;
@@ -124,13 +135,23 @@ h1 {
 
     .image-container {
         flex: 1; /* splits card in half */
-        width: 50%;
         margin: 0;
         position: relative;
         right: 0px;
         bottom: 0px;
         height: 0px; 
+        
+        background:
+        url('./images/illustration-woman-online-desktop.svg'),
+        url('images/bg-pattern-desktop.svg');
+        background-size: 106%, 225%;
+        background-position: -5.25rem center, -38rem -19rem;
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 100%;
      }
+     
+
     
     .image-container img {
         /* display: block; */
@@ -159,14 +180,19 @@ h1 {
     }
 
     .image-container .d-box {
-        bottom: 700px;
-        right: 150px;
-        width: 200px;
+        bottom: 0px;
+        right: 0px;
+        width: 0px;
     }
 
     .faq-container {
         flex: 1; /*splits card in half */
-        margin-top: 0px; /*edit*/
+        margin-top: 30px; /*edit*/
+        overflow-y: scroll;
+    }
+
+    .faq-container::-webkit-scrollbar {
+        display: none;
     }
 
     h1 {
@@ -178,4 +204,8 @@ h1 {
         margin-right: 9.5%;
     }
 
+    .d-image, .d-image-shadow{
+        display: none;
+    }
+    
 }
