@@ -50,17 +50,7 @@ Flexbox has kept my card's child divs evenly spaced in my past projects, however
 
 ### Continued development
 
-Image positioning is still a work in progress. I'm currently posistioning my images with something like
-```css
-.img {
-  position: relative ;
-  right: 10px;
-  bottom: 10px;
-}
-```
- But my images move around as I resize my window. Will further look into improving.
-
- My background gradient doesn't extend with my page's growth due to using the accordion. Leaving a purple bar in the bottom of the page.
+I'm still not confident in javascript DOM manipulation, I didn't even touch the javascript after copying the according code from w3shools. I'll likely have a better understanding of javascript DOM as I practice React in the future, skipping vanila javascript DOM practice.
 
 ### Useful resources
 
