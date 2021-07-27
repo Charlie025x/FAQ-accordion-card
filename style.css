@@ -125,8 +125,8 @@ h1 {
         background-color: white;
         width: 80%;
         max-width: 1000px;
-        height: 60vh;
-        margin: 100px auto;
+        height: 500px;
+        margin: 0;
         padding: 0px;
         justify-content: center;
         align-content: center;
@@ -159,7 +159,7 @@ h1 {
         display: none;
     }
 
-    .d-image, .d-image-shadow, .image-container .d-box {
+    /* .d-image, .d-image-shadow, .image-container .d-box {
         display: block;
         position: relative;
     }
@@ -178,6 +178,14 @@ h1 {
         bottom: 0px;
         right: 0px;
         width: 0px;
+    } */
+
+    .image-container .d-box {
+        display: block;
+        width: 200px;
+        position: relative;
+        top: 40%;
+        right: 95px;
     }
 
     .faq-container {
